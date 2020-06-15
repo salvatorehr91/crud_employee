@@ -1,0 +1,12 @@
+c:\users\chava\documents\visual studio 2017\Projects\WcfServiceEx\ConsumeWS\bin\Debug\ConsumeWS.exe.config
+c:\users\chava\documents\visual studio 2017\Projects\WcfServiceEx\ConsumeWS\bin\Debug\ConsumeWS.exe
+c:\users\chava\documents\visual studio 2017\Projects\WcfServiceEx\ConsumeWS\bin\Debug\ConsumeWS.pdb
+c:\users\chava\documents\visual studio 2017\Projects\WcfServiceEx\ConsumeWS\bin\Debug\Newtonsoft.Json.dll
+c:\users\chava\documents\visual studio 2017\Projects\WcfServiceEx\ConsumeWS\bin\Debug\Newtonsoft.Json.xml
+c:\users\chava\documents\visual studio 2017\Projects\WcfServiceEx\ConsumeWS\obj\Debug\ConsumeWS.Form1.resources
+c:\users\chava\documents\visual studio 2017\Projects\WcfServiceEx\ConsumeWS\obj\Debug\ConsumeWS.Properties.Resources.resources
+c:\users\chava\documents\visual studio 2017\Projects\WcfServiceEx\ConsumeWS\obj\Debug\ConsumeWS.csproj.GenerateResource.Cache
+c:\users\chava\documents\visual studio 2017\Projects\WcfServiceEx\ConsumeWS\obj\Debug\ConsumeWS.exe
+c:\users\chava\documents\visual studio 2017\Projects\WcfServiceEx\ConsumeWS\obj\Debug\ConsumeWS.pdb
+C:\Users\chava\Documents\Visual Studio 2017\Projects\WcfServiceEx\ConsumeWS\obj\Debug\ConsumeWS.VisorDatos.resources
+C:\Users\chava\Documents\Visual Studio 2017\Projects\WcfServiceEx\ConsumeWS\obj\Debug\ConsumeWS.csprojResolveAssemblyReference.cache
