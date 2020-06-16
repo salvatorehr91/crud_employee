@@ -10,105 +10,34 @@ namespace ConsumeWS
         {
             InitializeComponent();
         }
-        string nombre; string apaterno; string amaterno; string fechaN; string areaemp; string status;
-        private Employee dataEmp = new Employee();
-        private Cred cr = new Cred();
-        private ReqServicioRest reqServ = new ReqServicioRest();
 
-        public void LlenaDatos(Cred emp, bool stat)
+        string userD;
+        string passD;
+        public Employee cr = new Employee();
+
+        public void LlenaDatos(string user1, string pass1)
         {
-            if (!stat)
-            {
-                btAgregar.Visible = false;
-                tbStatus.ReadOnly = true;
-
-                nombre = emp.nombre;
-                apaterno = emp.apaterno;
-                amaterno = emp.amaterno;
-                fechaN = emp.fechaN;
-                areaemp = emp.areaemp;
-                status = emp.status.ToString();
-
-                tbNombre.Text = nombre;
-                tbAPaterno.Text = apaterno;
-                tbAMaterno.Text = amaterno;
-                tbFNace.Text = fechaN;
-                tbArea.Text = areaemp;
-                tbStatus.Text = status;
-
-                cr = emp;
-            }
+            userD = user1;
+            passD = pass1;
+            tbNombre.Text = cr.nombre;
+            tbAPaterno.Text = cr.apaterno;
+            tbAMaterno.Text = cr.amaterno;
+            dtTimeDate.Text = cr.fechaN;
+            tbArea.Text = cr.areaemp;
+            cbStatus.Text=cr.status.ToString();
+            if (Convert.ToBoolean(cbStatus.Text))
+                cbStatus.Text = "ALTA";
             else
-            {
-                tbStatus.ReadOnly = false;
-                btActualizar.Visible = false;
-            }
+                cbStatus.Text = "BAJA";
         }
 
-        private void btActualizar_Click(object sender, EventArgs e)
-        {
-            dataEmp.nombre = tbNombre.Text.ToUpper();
-            dataEmp.apaterno = tbAPaterno.Text;
-            dataEmp.amaterno = tbAMaterno.Text.ToUpper();
-            dataEmp.fechaN = tbFNace.Text.ToUpper();
-            dataEmp.areaemp = tbArea.Text.ToUpper();
-            dataEmp.status = Convert.ToBoolean(tbStatus.Text);
-
-            var armaJson = JsonRequest(dataEmp, cr);
-            try
-            {
-                string sURL = string.Format("http://localhost:57008/Example.svc/Update");
-                reqServ.Method = "PUT";
-                reqServ.ContentType = "application/json";
-                var resp = reqServ.CalltoRestPost(armaJson, sURL);
-
-                var jSonR = JsonConvert.DeserializeObject<ResponseWS>(resp);
-                MessageBox.Show("Credenciales: " + jSonR.response);
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Ocurrio un error:\n" + ex.Message);
-            }
-            Close();
-        }
-
-        private void btAgregar_Click(object sender, EventArgs e)
-        {
-            dataEmp.nombre = tbNombre.Text.ToUpper();
-            dataEmp.apaterno = tbAPaterno.Text;
-            dataEmp.amaterno = tbAMaterno.Text.ToUpper();
-            dataEmp.fechaN = tbFNace.Text.ToUpper();
-            dataEmp.areaemp = tbArea.Text.ToUpper();
-            if (tbStatus.Text == "A")
-                dataEmp.status = true;
-            else
-                dataEmp.status = false;
-
-            var armaJson = JsonRequest(dataEmp, cr);
-            try
-            {
-                string sURL = string.Format("http://localhost:57008/Example.svc/Create");
-                reqServ.Method = "POST";
-                reqServ.ContentType = "application/json";
-                var resp = reqServ.CalltoRestPost(armaJson, sURL);
-                resp = resp.Replace("\\", "").Replace("\"{", "{").Replace("}\"", "}");
-                var jSonR = JsonConvert.DeserializeObject<ResponseWS>(resp);
-                MessageBox.Show("Credenciales: " + jSonR.response);
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Ocurrio un error:\n" + ex.Message);
-            }
-            Close();
-        }
-
-        private static string JsonRequest(Employee emp, Cred cr)
+        private string JsonRequest(Employee emp)
         {
             try
             {
-                if (string.IsNullOrEmpty(cr.pass))
+                if (string.IsNullOrEmpty(passD))
                 {
-                    var json = new Employee()
+                    var json = new DataEmp()
                     {
                         nombre = emp.nombre,
                         apaterno = emp.apaterno,
@@ -121,16 +50,16 @@ namespace ConsumeWS
                 }
                 else
                 {
-                    var json = new Cred()
+                    var json = new Employee()
                     {
-                        nombre = cr.nombre,
-                        apaterno = cr.apaterno,
-                        amaterno = cr.amaterno,
-                        fechaN = cr.fechaN,
-                        areaemp = cr.areaemp,
-                        status = cr.status,
-                        user = cr.user,
-                        pass = cr.pass
+                        nombre = emp.nombre,
+                        apaterno = emp.apaterno,
+                        amaterno = emp.amaterno,
+                        fechaN = emp.fechaN,
+                        areaemp = emp.areaemp,
+                        status = emp.status,
+                        user = userD,
+                        pass = passD
                     };
                     return JsonConvert.SerializeObject(json);
                 }
@@ -141,24 +70,53 @@ namespace ConsumeWS
             }
         }
 
-        private void lbDelete_Click(object sender, EventArgs e)
+        private void btAceptar_Click(object sender, EventArgs e)
         {
-            var user = cr.user;
-            var contra = cr.pass;
-            string sURL = string.Format("http://localhost:57008/Example.svc/Elimina/{0}-{1}", user, contra);
-            reqServ.Method = "DELETE";
-            reqServ.ContentType = "application/json";
-            var response = reqServ.CalltoRest(sURL);
+            string sURL;
+            var dateT = DateTime.Parse(dtTimeDate.Text);
+            Employee dataEmp = new Employee();
+            dataEmp.nombre = tbNombre.Text.ToUpper();
+            dataEmp.apaterno = tbAPaterno.Text;
+            dataEmp.amaterno = tbAMaterno.Text.ToUpper();
+            dataEmp.fechaN = dateT.Year + "-" + dateT.Month + "-" + dateT.Day;
+            dataEmp.areaemp = tbArea.Text.ToUpper();
+            
+            if (cbStatus.Text == "Alta")
+                dataEmp.status = true;
+            else if(cbStatus.Text =="Baja")
+                dataEmp.status = false;
 
-            var respBaja = JsonConvert.DeserializeObject<BajaEmp>(response);
-
-            MessageBox.Show("Respuesta: " + respBaja.BajaEmpResult);
+            var armaJson = JsonRequest(dataEmp);
+            try
+            {
+                ReqServicioRest reqServ = new ReqServicioRest();
+                reqServ.ContentType = "application/json";
+                
+                if (string.IsNullOrEmpty(passD))
+                {
+                    sURL = string.Format("http://localhost:57008/Example.svc/Create");
+                    reqServ.Method = "POST";
+                    var resp = reqServ.CalltoRestPost(armaJson, sURL);
+                    resp = resp.Replace("\\", "").Replace("\"{", "{").Replace("}\"", "}");
+                    var jSonR = JsonConvert.DeserializeObject<ResponseWS>(resp);
+                    MessageBox.Show("Credenciales: " + jSonR.response);
+                }
+                else
+                {
+                    sURL = string.Format("http://localhost:57008/Example.svc/Update");
+                    reqServ.Method = "PUT";
+                    var resp = reqServ.CalltoRestPost(armaJson, sURL);
+                    resp = resp.Replace("\\", "").Replace("\"{", "{").Replace("}\"", "}");
+                    var jSonR = JsonConvert.DeserializeObject<Employee>(resp);
+                    string credd = jSonR.user + "-" + jSonR.pass;
+                    MessageBox.Show("Credenciales: " + credd);
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Ocurrio un error:\n" + ex.Message);
+            }
             Close();
         }
-    }
-
-    public class BajaEmp
-    {
-        public string BajaEmpResult { get; set; }
     }
 }

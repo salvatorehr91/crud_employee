@@ -9,4 +9,3 @@ c:\users\chava\documents\visual studio 2017\Projects\WcfServiceEx\ConsumeWS\obj\
 c:\users\chava\documents\visual studio 2017\Projects\WcfServiceEx\ConsumeWS\obj\Debug\ConsumeWS.exe
 c:\users\chava\documents\visual studio 2017\Projects\WcfServiceEx\ConsumeWS\obj\Debug\ConsumeWS.pdb
 C:\Users\chava\Documents\Visual Studio 2017\Projects\WcfServiceEx\ConsumeWS\obj\Debug\ConsumeWS.VisorDatos.resources
-C:\Users\chava\Documents\Visual Studio 2017\Projects\WcfServiceEx\ConsumeWS\obj\Debug\ConsumeWS.csprojResolveAssemblyReference.cache

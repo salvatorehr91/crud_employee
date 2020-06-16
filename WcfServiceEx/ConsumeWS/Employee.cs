@@ -8,9 +8,11 @@
         public string fechaN { get; set; }
         public bool status { get; set; }
         public string areaemp { get; set; }
+        public string user { get; set; }
+        public string pass { get; set; }
     }
 
-    public class Cred
+    public class DataEmp
     {
         public string nombre { get; set; }
         public string apaterno { get; set; }
@@ -18,8 +20,6 @@
         public string fechaN { get; set; }
         public bool status { get; set; }
         public string areaemp { get; set; }
-        public string user { get; set; }
-        public string pass { get; set; }
     }
 
     #region Respuesta POST/DELETE/PUT
@@ -40,6 +40,13 @@
     public class RespConEmp
     {
         public string ConsultaEmpResult { get; set; }
+    }
+    #endregion
+
+    #region BajaEmp
+    public class BajaEmp
+    {
+        public string BajaEmpResult { get; set; }
     }
     #endregion
 }
