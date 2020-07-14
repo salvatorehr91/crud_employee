@@ -46,6 +46,7 @@
     #region BajaEmp
     public class BajaEmp
     {
+        // Solo se ocupa para la baja de empleados
         public string BajaEmpResult { get; set; }
     }
     #endregion
