@@ -2,6 +2,7 @@
 {
     public class Employee
     {
+        //Comentario de variable: nombre
         public string nombre { get; set; }
         public string apaterno { get; set; }
         public string amaterno { get; set; }
