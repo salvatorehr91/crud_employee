@@ -37,9 +37,9 @@
             this.label3 = new System.Windows.Forms.Label();
             this.btNewData = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.desarrolloDataSet = new ConsumeWS.DesarrolloDataSet();
+            //this.desarrolloDataSet = new ConsumeWS.DesarrolloDataSet();
             this.employeeBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.employeeTableAdapter = new ConsumeWS.DesarrolloDataSetTableAdapters.employeeTableAdapter();
+            //this.employeeTableAdapter = new ConsumeWS.DesarrolloDataSetTableAdapters.employeeTableAdapter();
             this.fIUNICODataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.fCCONTRASENADataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.fCNOMBREDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -51,7 +51,7 @@
             this.button1 = new System.Windows.Forms.Button();
             this.btEliminar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.desarrolloDataSet)).BeginInit();
+            //((System.ComponentModel.ISupportInitialize)(this.desarrolloDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.employeeBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
@@ -138,17 +138,17 @@
             // 
             // desarrolloDataSet
             // 
-            this.desarrolloDataSet.DataSetName = "DesarrolloDataSet";
-            this.desarrolloDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            //this.desarrolloDataSet.DataSetName = "DesarrolloDataSet";
+            //this.desarrolloDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // employeeBindingSource
             // 
             this.employeeBindingSource.DataMember = "employee";
-            this.employeeBindingSource.DataSource = this.desarrolloDataSet;
+            //this.employeeBindingSource.DataSource = this.desarrolloDataSet;
             // 
             // employeeTableAdapter
             // 
-            this.employeeTableAdapter.ClearBeforeFill = true;
+            //this.employeeTableAdapter.ClearBeforeFill = true;
             // 
             // fIUNICODataGridViewTextBoxColumn
             // 
@@ -239,7 +239,7 @@
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.desarrolloDataSet)).EndInit();
+            //((System.ComponentModel.ISupportInitialize)(this.desarrolloDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.employeeBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -256,9 +256,9 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label btNewData;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private DesarrolloDataSet desarrolloDataSet;
+        //private DesarrolloDataSet desarrolloDataSet;
         private System.Windows.Forms.BindingSource employeeBindingSource;
-        private DesarrolloDataSetTableAdapters.employeeTableAdapter employeeTableAdapter;
+        //private DesarrolloDataSetTableAdapters.employeeTableAdapter employeeTableAdapter;
         private System.Windows.Forms.DataGridViewTextBoxColumn fIUNICODataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn fCCONTRASENADataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn fCNOMBREDataGridViewTextBoxColumn;

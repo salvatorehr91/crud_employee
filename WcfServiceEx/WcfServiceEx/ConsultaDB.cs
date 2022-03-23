@@ -6,7 +6,7 @@ namespace WcfServiceEx
 {
     public class ConsultaDB
     {
-        private const string cs = @"Server=127.0.0.1; Database=Data_BAse; User id=My_ID; password=My_Pass";
+        private const string cs = @"Server=NameDB; Database=Desarrollo; User id=sa; password=Desarroll0";
 
         public DataTable Ejecuta(string query)
         {

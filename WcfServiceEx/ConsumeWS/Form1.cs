@@ -46,7 +46,7 @@ namespace ConsumeWS
         private void Form1_Load(object sender, EventArgs e)
         {
             // TODO: esta línea de código carga datos en la tabla 'desarrolloDataSet.employee' Puede moverla o quitarla según sea necesario.
-            this.employeeTableAdapter.Fill(this.desarrolloDataSet.employee);
+            //this.employeeTableAdapter.Fill(this.desarrolloDataSet.employee);
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -76,7 +76,10 @@ namespace ConsumeWS
         }
         private void UpdateInfo()
         {
-            this.employeeTableAdapter.Fill(this.desarrolloDataSet.employee);
+            //this.employeeTableAdapter.Fill(this.desarrolloDataSet.employee);
+            string query = "select * from employee";
+            ConsultaDB db = new ConsultaDB();
+            employeeBindingSource.DataSource = db.Ejecuta(query);
         }
     }
 }
