@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.1758
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsumeWS", "ConsumeWS.csproj", "{2503938E-717E-4DE5-956B-34AD0D220037}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WcfServiceEx", "..\WcfServiceEx\WcfServiceEx.csproj", "{B0506FBE-155F-4033-B471-2F3F2FDE3675}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2503938E-717E-4DE5-956B-34AD0D220037}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2503938E-717E-4DE5-956B-34AD0D220037}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2503938E-717E-4DE5-956B-34AD0D220037}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2503938E-717E-4DE5-956B-34AD0D220037}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B0506FBE-155F-4033-B471-2F3F2FDE3675}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B0506FBE-155F-4033-B471-2F3F2FDE3675}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B0506FBE-155F-4033-B471-2F3F2FDE3675}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B0506FBE-155F-4033-B471-2F3F2FDE3675}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9EE9694F-58EB-4133-AB09-7234E5146B0F}
+	EndGlobalSection
+EndGlobal

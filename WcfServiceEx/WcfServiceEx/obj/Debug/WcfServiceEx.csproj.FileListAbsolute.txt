@@ -1,0 +1,9 @@
+C:\Document\Testing\crud_employee\WcfServiceEx\WcfServiceEx\bin\WcfServiceEx.dll.config
+C:\Document\Testing\crud_employee\WcfServiceEx\WcfServiceEx\bin\WcfServiceEx.dll
+C:\Document\Testing\crud_employee\WcfServiceEx\WcfServiceEx\bin\WcfServiceEx.pdb
+C:\Document\Testing\crud_employee\WcfServiceEx\WcfServiceEx\bin\Newtonsoft.Json.dll
+C:\Document\Testing\crud_employee\WcfServiceEx\WcfServiceEx\bin\Newtonsoft.Json.xml
+C:\Document\Testing\crud_employee\WcfServiceEx\WcfServiceEx\obj\Debug\WcfServiceEx.csproj.CoreCompileInputs.cache
+C:\Document\Testing\crud_employee\WcfServiceEx\WcfServiceEx\obj\Debug\WcfServiceEx.csproj.CopyComplete
+C:\Document\Testing\crud_employee\WcfServiceEx\WcfServiceEx\obj\Debug\WcfServiceEx.dll
+C:\Document\Testing\crud_employee\WcfServiceEx\WcfServiceEx\obj\Debug\WcfServiceEx.pdb

@@ -1,11 +1,13 @@
-c:\users\chava\documents\visual studio 2017\Projects\WcfServiceEx\ConsumeWS\bin\Debug\ConsumeWS.exe.config
-c:\users\chava\documents\visual studio 2017\Projects\WcfServiceEx\ConsumeWS\bin\Debug\ConsumeWS.exe
-c:\users\chava\documents\visual studio 2017\Projects\WcfServiceEx\ConsumeWS\bin\Debug\ConsumeWS.pdb
-c:\users\chava\documents\visual studio 2017\Projects\WcfServiceEx\ConsumeWS\bin\Debug\Newtonsoft.Json.dll
-c:\users\chava\documents\visual studio 2017\Projects\WcfServiceEx\ConsumeWS\bin\Debug\Newtonsoft.Json.xml
-c:\users\chava\documents\visual studio 2017\Projects\WcfServiceEx\ConsumeWS\obj\Debug\ConsumeWS.Form1.resources
-c:\users\chava\documents\visual studio 2017\Projects\WcfServiceEx\ConsumeWS\obj\Debug\ConsumeWS.Properties.Resources.resources
-c:\users\chava\documents\visual studio 2017\Projects\WcfServiceEx\ConsumeWS\obj\Debug\ConsumeWS.csproj.GenerateResource.Cache
-c:\users\chava\documents\visual studio 2017\Projects\WcfServiceEx\ConsumeWS\obj\Debug\ConsumeWS.exe
-c:\users\chava\documents\visual studio 2017\Projects\WcfServiceEx\ConsumeWS\obj\Debug\ConsumeWS.pdb
-C:\Users\chava\Documents\Visual Studio 2017\Projects\WcfServiceEx\ConsumeWS\obj\Debug\ConsumeWS.VisorDatos.resources
+C:\Document\Testing\crud_employee\WcfServiceEx\ConsumeWS\bin\Debug\ConsumeWS.exe.config
+C:\Document\Testing\crud_employee\WcfServiceEx\ConsumeWS\bin\Debug\ConsumeWS.exe
+C:\Document\Testing\crud_employee\WcfServiceEx\ConsumeWS\bin\Debug\ConsumeWS.pdb
+C:\Document\Testing\crud_employee\WcfServiceEx\ConsumeWS\bin\Debug\Newtonsoft.Json.dll
+C:\Document\Testing\crud_employee\WcfServiceEx\ConsumeWS\bin\Debug\Newtonsoft.Json.xml
+C:\Document\Testing\crud_employee\WcfServiceEx\ConsumeWS\obj\Debug\ConsumeWS.Form1.resources
+C:\Document\Testing\crud_employee\WcfServiceEx\ConsumeWS\obj\Debug\ConsumeWS.Properties.Resources.resources
+C:\Document\Testing\crud_employee\WcfServiceEx\ConsumeWS\obj\Debug\ConsumeWS.VisorDatos.resources
+C:\Document\Testing\crud_employee\WcfServiceEx\ConsumeWS\obj\Debug\ConsumeWS.csproj.GenerateResource.cache
+C:\Document\Testing\crud_employee\WcfServiceEx\ConsumeWS\obj\Debug\ConsumeWS.csproj.CoreCompileInputs.cache
+C:\Document\Testing\crud_employee\WcfServiceEx\ConsumeWS\obj\Debug\ConsumeWS.csproj.CopyComplete
+C:\Document\Testing\crud_employee\WcfServiceEx\ConsumeWS\obj\Debug\ConsumeWS.exe
+C:\Document\Testing\crud_employee\WcfServiceEx\ConsumeWS\obj\Debug\ConsumeWS.pdb
